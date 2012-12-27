@@ -889,5 +889,10 @@ namespace fox
             }
             face = true;
         }
+
+        private void panel2_SizeChanged(object sender, EventArgs e)
+        {
+            openGLControl.Size = new System.Drawing.Size(this.Size.Width - 250, this.Size.Height - 80);
+        }
     }
 }

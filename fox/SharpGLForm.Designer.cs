@@ -178,6 +178,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.js = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.openGLControl)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -196,6 +197,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.d3d)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // openGLControl
@@ -231,13 +233,13 @@
             // 
             // info
             // 
-            this.info.Location = new System.Drawing.Point(277, 487);
+            this.info.Location = new System.Drawing.Point(2, 45);
             this.info.MaxLength = 2147483647;
             this.info.Multiline = true;
             this.info.Name = "info";
             this.info.ReadOnly = true;
             this.info.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.info.Size = new System.Drawing.Size(726, 80);
+            this.info.Size = new System.Drawing.Size(726, 66);
             this.info.TabIndex = 3;
             // 
             // tabControl1
@@ -245,10 +247,11 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(2, 53);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tabControl1.Location = new System.Drawing.Point(0, 25);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(276, 514);
+            this.tabControl1.Size = new System.Drawing.Size(276, 545);
             this.tabControl1.TabIndex = 4;
             // 
             // tabPage1
@@ -263,7 +266,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(268, 488);
+            this.tabPage1.Size = new System.Drawing.Size(268, 519);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "几何";
             // 
@@ -1427,7 +1430,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(662, 461);
+            this.label2.Location = new System.Drawing.Point(388, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 21;
@@ -1436,7 +1439,7 @@
             // 网格
             // 
             this.网格.AutoSize = true;
-            this.网格.Location = new System.Drawing.Point(723, 461);
+            this.网格.Location = new System.Drawing.Point(449, 11);
             this.网格.Name = "网格";
             this.网格.Size = new System.Drawing.Size(15, 14);
             this.网格.TabIndex = 20;
@@ -1444,7 +1447,7 @@
             // 
             // ColorNum
             // 
-            this.ColorNum.Location = new System.Drawing.Point(799, 439);
+            this.ColorNum.Location = new System.Drawing.Point(525, 6);
             this.ColorNum.Maximum = 150;
             this.ColorNum.Minimum = 10;
             this.ColorNum.Name = "ColorNum";
@@ -1469,7 +1472,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(291, 461);
+            this.label6.Location = new System.Drawing.Point(17, 11);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(24, 13);
             this.label6.TabIndex = 7;
@@ -1477,7 +1480,7 @@
             // 
             // min
             // 
-            this.min.Location = new System.Drawing.Point(321, 458);
+            this.min.Location = new System.Drawing.Point(47, 8);
             this.min.Name = "min";
             this.min.Size = new System.Drawing.Size(100, 20);
             this.min.TabIndex = 8;
@@ -1485,7 +1488,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(432, 461);
+            this.label7.Location = new System.Drawing.Point(158, 11);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(27, 13);
             this.label7.TabIndex = 9;
@@ -1493,14 +1496,14 @@
             // 
             // max
             // 
-            this.max.Location = new System.Drawing.Point(465, 458);
+            this.max.Location = new System.Drawing.Point(191, 8);
             this.max.Name = "max";
             this.max.Size = new System.Drawing.Size(100, 20);
             this.max.TabIndex = 10;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(583, 456);
+            this.button4.Location = new System.Drawing.Point(309, 6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(47, 23);
             this.button4.TabIndex = 11;
@@ -1544,35 +1547,35 @@
             // 新建工程ToolStripMenuItem
             // 
             this.新建工程ToolStripMenuItem.Name = "新建工程ToolStripMenuItem";
-            this.新建工程ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.新建工程ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.新建工程ToolStripMenuItem.Text = "新建工程";
             this.新建工程ToolStripMenuItem.Click += new System.EventHandler(this.新建工程ToolStripMenuItem_Click);
             // 
             // 打开工程ToolStripMenuItem
             // 
             this.打开工程ToolStripMenuItem.Name = "打开工程ToolStripMenuItem";
-            this.打开工程ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.打开工程ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.打开工程ToolStripMenuItem.Text = "打开工程";
             this.打开工程ToolStripMenuItem.Click += new System.EventHandler(this.打开工程ToolStripMenuItem_Click);
             // 
             // 保存工程ToolStripMenuItem
             // 
             this.保存工程ToolStripMenuItem.Name = "保存工程ToolStripMenuItem";
-            this.保存工程ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.保存工程ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.保存工程ToolStripMenuItem.Text = "保存工程";
             this.保存工程ToolStripMenuItem.Click += new System.EventHandler(this.保存工程ToolStripMenuItem_Click);
             // 
             // 另存工程ToolStripMenuItem
             // 
             this.另存工程ToolStripMenuItem.Name = "另存工程ToolStripMenuItem";
-            this.另存工程ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.另存工程ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.另存工程ToolStripMenuItem.Text = "另存工程";
             this.另存工程ToolStripMenuItem.Click += new System.EventHandler(this.另存工程ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -1604,9 +1607,9 @@
             this.toolStripButton4,
             this.toolStripButton5,
             this.toolStripButton6});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip1.Location = new System.Drawing.Point(276, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1015, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(739, 25);
             this.toolStrip1.TabIndex = 22;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1669,37 +1672,47 @@
             // 
             // js
             // 
-            this.js.Location = new System.Drawing.Point(909, 439);
+            this.js.Location = new System.Drawing.Point(635, 6);
             this.js.Name = "js";
             this.js.ReadOnly = true;
             this.js.Size = new System.Drawing.Size(44, 20);
             this.js.TabIndex = 23;
             this.js.Text = "30";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.max);
+            this.panel1.Controls.Add(this.js);
+            this.panel1.Controls.Add(this.网格);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.info);
+            this.panel1.Controls.Add(this.ColorNum);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.min);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(276, 447);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(739, 123);
+            this.panel1.TabIndex = 24;
+            // 
             // SharpGLForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 570);
-            this.Controls.Add(this.js);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.max);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.min);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.d3d);
-            this.Controls.Add(this.ColorNum);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.info);
             this.Controls.Add(this.openGLControl);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.网格);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1031, 608);
             this.Name = "SharpGLForm";
+            this.SizeChanged += new System.EventHandler(this.SharpGLForm_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.openGLControl)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1727,6 +1740,8 @@
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1882,6 +1897,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel1;
 
     }
 }

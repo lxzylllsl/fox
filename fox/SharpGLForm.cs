@@ -1789,6 +1789,11 @@ namespace fox
             Application.Exit();
         }
 
+        private void SharpGLForm_SizeChanged(object sender, EventArgs e)
+        {
+            openGLControl.Size = new System.Drawing.Size(this.Size.Width - 280, this.Size.Height - 90);
+        }
+
 
 
     }
